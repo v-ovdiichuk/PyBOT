@@ -123,14 +123,15 @@ def play_guess_number():
         guess = int(choice)
 
         if guess < number:
-            print(Fore.YELLOW + f"Загадане число більше {emoji.emojize(':up_arrow:')} ")
+            print(Fore.YELLOW +
+                  f"Загадане число більше {emoji.emojize(':up_arrow:')} ")
         elif guess > number:
-            print(Fore.YELLOW + f"Загадане число менше! {emoji.emojize(':down_arrow:')} ")
+            print(Fore.YELLOW +
+                  f"Загадане число менше! {emoji.emojize(':down_arrow:')} ")
         else:
             print(
                 f"{Fore.GREEN}Вітаю! Ви вгадали число {number} за {attempts} спроб!")
             break
-
 
 
 def get_intresting_story():
@@ -182,9 +183,9 @@ def main_menu():
         print(f"3. Пограти в гру {emoji.emojize(':video_game:')}")
         print(f"4. Цікава історія {emoji.emojize(':light_bulb:')}")
         print(f"0. Вихід {emoji.emojize(':door:')}")
-        
+
         choice = input(f"{Fore.WHITE}Оберіть пункт: ")
-        
+
         if choice == '1':
             show_recomendations()
         elif choice == '2':
