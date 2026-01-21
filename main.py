@@ -4,7 +4,7 @@ import emoji
 import games
 from jokes import get_joke
 from recomendations import show_recomendations
-from storys import get_intresting_story
+from stories import get_intresting_story
 
 # Ініціалізація колорама для кольорового тексту
 
