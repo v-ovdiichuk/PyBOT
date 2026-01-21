@@ -1,9 +1,7 @@
 import random
-from art import tprint
 from colorama import Fore, Style, init
-from time import sleep
-from tqdm import tqdm
 import emoji
+
 
 def play_rps():
     """Гра Камінь, ножиці, папір"""
@@ -32,6 +30,7 @@ def play_rps():
             print(Fore.RED + "Ви програли. Спробуйте ще раз!")
         print("-" * 20)
 
+
 def play_guess_number():
     """Гра вгадай число"""
     number = random.randint(1, 20)
@@ -59,4 +58,4 @@ def play_guess_number():
         else:
             print(
                 f"{Fore.GREEN}Вітаю! Ви вгадали число {number} за {attempts} спроб!")
-            break        
+            break
